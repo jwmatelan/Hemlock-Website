@@ -1,0 +1,295 @@
+/* ============================================================
+   Hemlock CPA Company — Colors & Type
+   Single source of truth for brand tokens.
+   Import: <link rel="stylesheet" href="/colors_and_type.css">
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Boska";
+  src: url("fonts/Boska-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Boska";
+  src: url("fonts/Boska-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- CORE PALETTE ---------- */
+  --hl-defender:      #3d4a2e;  /* Defender Olive — brand hero       */
+  --hl-deep-forest:   #1e3320;  /* Deep Forest — darkest ground      */
+  --hl-stone:         #b5a98a;  /* Stone — warm mid neutral          */
+  --hl-saddle:        #8b5e3c;  /* Saddle — worn leather accent      */
+  --hl-wet-slate:     #4a4e46;  /* Wet Slate — body text neutral     */
+  --hl-mist:          #d4cfc4;  /* Mist — soft divider               */
+  --hl-parchment:     #f2ede4;  /* Parchment — default page bg       */
+
+  /* ---------- OLIVE RAMP ---------- */
+  --hl-olive-900: #2a3520;
+  --hl-olive-800: #3d4a2e;   /* = defender */
+  --hl-olive-700: #4a5a36;
+  --hl-olive-600: #5c6e42;
+  --hl-olive-500: #7a9458;
+  --hl-olive-400: #a8bf8a;
+  --hl-olive-300: #ccddb8;
+  --hl-olive-200: #e8f0dc;
+  --hl-olive-100: #f2f7e8;
+
+  /* ---------- SADDLE / EARTH RAMP ---------- */
+  --hl-saddle-900: #4a2d18;
+  --hl-saddle-800: #6b4226;
+  --hl-saddle-700: #8b5e3c;   /* = saddle */
+  --hl-saddle-600: #b07d52;
+  --hl-saddle-500: #c9a478;
+  --hl-saddle-400: #e2cdb0;
+  --hl-saddle-300: #f5ece0;
+  --hl-saddle-200: #faf3e8;
+
+  /* ---------- SEMANTIC: SURFACES & TEXT ---------- */
+  --bg-page:          var(--hl-parchment);
+  --bg-surface:       #ffffff;
+  --bg-surface-alt:   #faf6ee;       /* warm off-white */
+  --bg-divider:       var(--hl-mist);
+  --bg-dark:          var(--hl-deep-forest);
+  --bg-dark-alt:      var(--hl-defender);
+
+  --fg-1:             var(--hl-deep-forest);  /* headings, primary */
+  --fg-2:             var(--hl-wet-slate);    /* body              */
+  --fg-3:             #6f7269;                /* muted, captions   */
+  --fg-on-dark:       var(--hl-parchment);
+  --fg-on-dark-muted: #c4c0b6;
+  --fg-accent:        var(--hl-defender);     /* eyebrows, links   */
+  --fg-warm:          var(--hl-saddle);
+
+  --border-hairline:  rgba(30, 51, 32, 0.12);
+  --border-strong:    rgba(30, 51, 32, 0.32);
+  --border-on-dark:   rgba(212, 207, 196, 0.18);
+
+  /* ---------- SEMANTIC: STATE ---------- */
+  --state-success:    #4a5a36;
+  --state-warning:    #b07d52;
+  --state-danger:     #8b3a2e;
+  --state-info:       #4a4e46;
+
+  /* ---------- SHADOWS ---------- */
+  --shadow-sm: 0 1px 2px rgba(30,51,32,.06);
+  --shadow-md: 0 4px 12px rgba(30,51,32,.08);
+  --shadow-lg: 0 12px 32px rgba(30,51,32,.10);
+
+  /* ---------- RADII ---------- */
+  --radius-xs: 2px;     /* default — buttons, fields */
+  --radius-sm: 4px;
+  --radius-md: 6px;     /* cards */
+  --radius-lg: 10px;
+  --radius-pill: 999px;
+
+  /* ---------- SPACING (8pt grid) ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ---------- LAYOUT ---------- */
+  --container-marketing: 1180px;
+  --container-app:       1280px;
+  --nav-height:          72px;
+
+  /* ---------- TYPOGRAPHY: FAMILIES ---------- */
+  --font-serif: "Boska", Georgia, "Times New Roman", serif;
+  --font-sans:  "Outfit", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono:  ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ---------- TYPOGRAPHY: SCALE ---------- */
+  --fs-display: 72px;
+  --fs-h1: 56px;
+  --fs-h2: 40px;
+  --fs-h3: 28px;
+  --fs-h4: 22px;
+  --fs-body-lg: 19px;
+  --fs-body: 17px;
+  --fs-small: 14px;
+  --fs-eyebrow: 13px;
+
+  --lh-tight: 1.1;
+  --lh-snug:  1.25;
+  --lh-body:  1.55;
+  --lh-loose: 1.7;
+
+  /* ---------- MOTION ---------- */
+  --ease: cubic-bezier(.4, 0, .2, 1);
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 480ms;
+}
+
+/* ============================================================
+   BASE ELEMENT STYLES
+   ============================================================ */
+
+html, body {
+  background: var(--bg-page);
+  color: var(--fg-2);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--fg-1);
+  font-weight: 700; /* Boska Bold for headings; Regular available for tagline / body serif */
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); line-height: var(--lh-snug); }
+h4 { font-size: var(--fs-h4); line-height: var(--lh-snug); }
+
+p {
+  margin: 0 0 1em 0;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg-2);
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--fg-accent);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+a:hover { color: var(--hl-deep-forest); }
+
+small { font-size: var(--fs-small); }
+
+::selection { background: var(--hl-olive-300); color: var(--hl-deep-forest); }
+
+/* ============================================================
+   UTILITY CLASSES — match the marketing rhythm
+   ============================================================ */
+
+.hl-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--fg-accent);
+  margin: 0;
+}
+
+.hl-tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--fg-accent);
+  font-size: var(--fs-h4);
+  line-height: var(--lh-snug);
+}
+
+.hl-supporting {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body-lg);
+  color: var(--fg-2);
+  line-height: var(--lh-body);
+}
+
+.hl-caps-label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--fg-accent);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.hl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 14px 28px;
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition:
+    background-color var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease);
+  text-decoration: none;
+  line-height: 1;
+}
+.hl-btn:active { transform: scale(.98); }
+.hl-btn:focus-visible {
+  outline: 2px solid var(--hl-defender);
+  outline-offset: 2px;
+}
+
+.hl-btn--primary {
+  background: var(--hl-deep-forest);
+  color: var(--hl-parchment);
+}
+.hl-btn--primary:hover { background: #162619; }
+
+.hl-btn--secondary {
+  background: transparent;
+  color: var(--hl-deep-forest);
+  border-color: var(--hl-deep-forest);
+}
+.hl-btn--secondary:hover {
+  background: var(--hl-deep-forest);
+  color: var(--hl-parchment);
+}
+
+.hl-btn--ghost {
+  background: transparent;
+  color: var(--hl-deep-forest);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--hl-deep-forest);
+  border-radius: 0;
+}
+.hl-btn--ghost:hover { color: var(--hl-saddle); border-color: var(--hl-saddle); }
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+
+.hl-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+}
+.hl-card--elevated {
+  background: var(--bg-page);
+  box-shadow: var(--shadow-md);
+}
