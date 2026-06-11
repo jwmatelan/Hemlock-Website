@@ -234,7 +234,7 @@ const TAX = {
         ['Entity structure review', false, true, true],
         ['Year-end tax projection', false, true, true],
         ['Retirement contribution planning', false, true, true],
-        ['Depreciation & fixed-asset strategy', false, true, true],
+        ['Depreciation tracking & fixed-asset strategy', false, true, true],
         ['Deduction optimization review', false, true, true],
       ],
     },
