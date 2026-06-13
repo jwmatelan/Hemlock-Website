@@ -33,7 +33,7 @@ const Hero = () => (
              style={{ background: 'var(--hl-parchment)', color: 'var(--hl-deep-forest)' }}>
             SCHEDULE A FREE CONSULTATION
           </a>
-          <a className="hl-btn hl-btn--secondary" href="#"
+          <a className="hl-btn hl-btn--secondary" href="#services-summary"
              style={{ borderColor: 'var(--hl-parchment)', color: 'var(--hl-parchment)' }}>
             OUR SERVICES
           </a>
