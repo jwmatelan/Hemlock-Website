@@ -15,7 +15,7 @@ const INSIGHTS_DATA = [
       { type: 'p', text: 'If you\'re a sole proprietor, partner, or S-Corp shareholder expecting to owe more than $1,000 in federal tax for the year, you\'re required to make quarterly estimated payments. The first installment, covering January through March income, is due April 15.' },
       { type: 'p', text: 'The IRS calculates your underpayment penalty based on a daily rate, so late payments accumulate charges immediately. Pennsylvania follows a similar schedule, with Q1 estimated payments also due April 15 for state purposes.' },
       { type: 'callout', text: 'Rule of thumb: if your prior-year tax liability was $1,000 or more, assume you need to make quarterly estimates.' },
-      { type: 'h2', text: 'April 15 — Partnership and S-Corp Extended Returns (with October 15 Deadline)' },
+      { type: 'h2', text: 'March 15 — Partnership and S-Corp Returns (Extended Deadline: September 15)' },
       { type: 'p', text: 'Pass-through entities (partnerships and S-Corps) that filed for an automatic six-month extension on March 15 have until September 15 to file. If you\'re operating as a C-Corp on a calendar year and filed for extension, your extended deadline falls on October 15.' },
       { type: 'p', text: 'Extensions of time to file are not extensions of time to pay. If you owe tax, interest and penalties accrue from the original due date regardless of extension status.' },
       { type: 'h2', text: 'June 16 — Q2 Estimated Tax Payment Due' },
