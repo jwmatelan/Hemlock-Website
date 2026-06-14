@@ -22,7 +22,7 @@ const ServiceHero = ({ service, kicker = 'PRICING' }) => (
       <div className="hl-eyebrow" style={{ color: 'var(--hl-olive-300)', marginBottom: 20 }}>
         {kicker} — {service.eyebrow}
       </div>
-      <h1 style={{ fontSize: 64, lineHeight: 1.05, color: 'var(--hl-parchment)', marginBottom: 22, letterSpacing: '-.015em', maxWidth: 900, margin: '0 auto 22' }}>
+      <h1 style={{ fontSize: 64, lineHeight: 1.05, color: 'var(--hl-parchment)', letterSpacing: '-.015em', maxWidth: 900, margin: '0 auto 22px' }}>
         {service.headline}<br/>
         <span style={{ fontStyle: 'italic', color: 'var(--hl-olive-300)' }}>{service.italic}</span>
       </h1>
