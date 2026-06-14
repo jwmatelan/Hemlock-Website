@@ -107,7 +107,7 @@ const ServiceTiles = () => (
           eyebrow="TAX PLANNING & PREPARATION"
           title="Clean returns. Fewer surprises."
           italic="Plan ahead. Pay less."
-          body="From annual filing to a year-round strategy partnership. Business and personal returns coordinated to keep your overall position low."
+          body="Business taxes and personal taxes belong together. We coordinate both, keep you in compliance, and plan around where you're going — not just where you've been."
           points={[
             { roman: 'I',   name: 'The Foundation', note: 'Business & owner return prep, federal & state filing.' },
             { roman: 'II',  name: 'The Steward',    note: 'Mid-year planning, entity review, projection.' },
