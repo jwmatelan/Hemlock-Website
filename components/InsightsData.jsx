@@ -678,8 +678,6 @@ const INSIGHTS_DATA = [
       { type: 'h2', text: 'LLC vs. S-Corp vs. C-Corp' },
       { type: 'p', text: 'For most small businesses in this range, the decision is between an LLC (for simplicity and liability protection) and an LLC taxed as an S-Corp (for SE tax savings on top of liability protection). A single-member LLC with no S-Corp election is taxed identically to a sole proprietorship — the liability protection comes without any change to your tax return structure.' },
       { type: 'p', text: 'A C-Corp makes sense in specific situations: businesses pursuing venture capital, companies with complex equity arrangements, or businesses where retained earnings and a flat 21% corporate rate create planning opportunities. For most solo and small business owners in Western PA, it\'s not the right starting point.' },
-      { type: 'h2', text: 'The Pennsylvania Side' },
-      { type: 'p', text: 'Pennsylvania requires registration of LLCs and corporations with the Department of State, along with annual fees. PA also imposes a Capital Stock Tax on LLCs (which technically still exists as a minimal imposition). These are small administrative costs, but they\'re part of the compliance picture when evaluating the move.' },
       { type: 'h2', text: 'The Bottom Line' },
       { type: 'p', text: 'The sole proprietorship is a reasonable starting point, not a permanent structure. If your business is generating meaningful income and you haven\'t formalized your entity, a short planning conversation — covering liability exposure, SE tax math, and the actual cost of formation — will tell you exactly where you stand and whether a change makes sense now.' },
     ],
